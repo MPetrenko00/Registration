@@ -1,0 +1,158 @@
+body{
+    font-family: Tahoma, sans-serif;
+}
+
+h1{
+    cursor: help;
+    margin: 0;
+    text-transform: uppercase;
+    padding-bottom: 5px;
+    border-bottom: 2px solid #b1b8c0;
+}
+
+.group__form{
+    margin: 0 auto;
+    background: #8d9298;
+    width: 450px;
+    height: 900px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+    margin-bottom: 60px;
+}
+
+.post__form{
+    margin: 0 auto;
+    background: #79acea;
+    width: 200px;
+    height: 70px;
+    padding: 20px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+    margin-bottom: 60px;
+}
+
+.group{
+    margin: 10px;
+    padding: 5px;
+}
+
+.group__label{
+    padding-left: 10px;
+    text-transform: uppercase;
+}
+
+.group__input{
+    margin-top: 10px;
+    height: 40px;
+    width: 400px;
+    border-radius: 20px/20px;
+    border: 0;
+    padding-left: 15px;
+    font-size: 18px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+}
+
+.group__input::placeholder{
+    font-size: 16px;
+    color: #ccc;
+}
+
+.group__input:focus{
+    border: 2px solid #81c4fe;
+    transform: translateX(15px);
+    width: 385px;
+}
+
+.button{
+    margin: 0 auto;
+    display: block;
+
+    cursor: pointer;
+    padding: 15px 30px;
+    height: 50px;
+    color: #fff;
+    background: #5a9eda;
+    border: 0;
+    border-radius: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.82);
+}
+
+.button:hover{
+    opacity: .80;
+    font-weight: bold;
+    transform: scale(1.1);
+}
+
+.group__title{
+    font-size: 20px;
+}
+
+
+.options{
+    margin: 10px 0px 0px 0px;  
+}
+
+.option__item{
+    margin: 0px 0px 10px 0px;  
+}
+.option__input{
+    display: none;
+}
+
+.option__input:checked + .option__label::after{
+    transform: scale(1);
+}
+
+.option__label{
+    display: inline-flex;
+    font-size: 16px;
+    line-height: 140%;
+    align-items: center;
+    position: relative;
+}
+
+.option__label::before{
+    content: "";
+    align-self: flex-start;
+    flex: 0 0 24px;
+    height: 24px;
+    background-color: #fff;
+    border-radius: 50%;
+    margin: 0px 10px 0px 0px;
+}
+
+.option__label::after{
+    content: "";
+    position: absolute;
+    top: 4px;
+    left: 4px;
+    width: 16px;
+    height: 16px;
+    background-color: #46b058;
+    border-radius: 50%;
+    transform: scale(0);
+}
+
+.select {
+    padding: 10px; 
+    width: 385px;
+    border: 1px solid #ccc; 
+    border-radius: 5px; 
+}
+
+.select option {
+    font-size: 18px;
+    padding: 10px; 
+}
+
+
+.select option:checked {
+    background-color: #007bff;
+    color: #fff;
+}
+
+
+.select select:checked {
+    font-weight: bold;
+}

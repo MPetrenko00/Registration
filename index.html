@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <form class="group__form" action="welcome.php">
+        <h1 title="Registration">Форма</h1>
+        <div class="group">
+            <label class="group__label" for="">Ім'я:</label>
+            <input class="group__input" placeholder="Введіть ім'я" type="text" name="name">
+        </div>
+        <div class="group">
+            <label class="group__label" for="">Прізвище:</label>
+            <input class="group__input" placeholder="Введіть прізвище" type="text" name="surname">
+        </div>
+        <div class="group">
+            <label class="group__label" for="">Пароль:</label>
+            <input class="group__input" placeholder="Введіть пароль" type="password" name="password">
+        </div>
+        <div class="group">
+            <label class="group__label" for="">Email:</label>
+            <input class="group__input" placeholder="Введіть email" type="email" name="email">
+        </div>
+        <div class="group">
+            <label class="group__label" for="">День народження:</label>
+            <input class="group__input" type="date" name="date">
+        </div>
+        <div class="group">
+            <div class="group__title">Оберіть країну:</div>
+            <select name="city" class="select">
+                <option value="Україна" selected>Ураїна</option>
+                <option value="Польща">Польща</option>
+                <option value="Німеччина">Німеччина</option>
+                <option value="Молдова">Молдова</option>
+                <option value="Угорщина">Угорщина</option>
+                <option value="Франція">Франція</option>
+                <option value="Італія">Італія</option>
+                <option value="Австрія">Австрія</option>
+                <option value="Чернігів">Чернігів</option>
+            </select>  
+        </div>
+        <div class="group">
+            <div class="group__title">Оберіть місто:</div>
+            <select name="city" class="select">
+                <option value="Київ" selected>Київ</option>
+                <option value="Харків">Харків</option>
+                <option value="Суми">Суми</option>
+                <option value="Одеса">Одеса</option>
+                <option value="Львів">Львів</option>
+                <option value="Житомир">Житомир</option>
+                <option value="Дніпро">Дніпро</option>
+                <option value="Полтава">Полтава</option>
+                <option value="Чернігів">Чернігів</option>
+            </select>  
+        </div>
+        <div class="group">
+            <div class="group__title">Передзвонювати після замовлення?</div>
+            <div class="options">
+                <div class="option__item">
+                    <input id="formRightHanded" type="radio" value="yes" name="qw" class="option__input">
+                    <label for="formRightHanded" class="option__label">Так</label>
+                </div>
+                <div class="option__item">
+                    <input id="formLeftHanded" type="radio" value="no" name="qw" class="option__input">
+                    <label for="formLeftHanded" class="option__label">Ні</label>
+                </div>
+            </div>
+        </div>
+        <div class="group">
+            <button class="button">OK</button>
+        </div>
+    </form>
+    <form class="post__form" method="post" action="welcome.php">
+        <label for="userGuess">Введіть число від 1 до 10:</label>
+        <input type="number" name="userGuess" id="userGuess" required>
+        <button type="submit">ГОТОВО</button>
+    </form>
+    
+</body>
+</html>
